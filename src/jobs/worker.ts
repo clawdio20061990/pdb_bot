@@ -371,12 +371,22 @@ function isRetryable(err: unknown): boolean {
 
 const HEARTBEAT_MS = 60_000;
 const STALE_MINUTES = 5;
+const MAINTENANCE_MS = 10 * 60_000;
+/**
+ * Jobs are enqueued in this same process, so a tick is normally triggered by onEnqueue; polling only
+ * catches delayed retries and work left behind by a crashed instance. When there is nothing waiting we
+ * therefore idle for minutes instead of seconds — that lets the Neon compute suspend (it costs
+ * compute hours while anything queries it) and keeps the free tiers viable.
+ */
+const IDLE_POLL_MS = 5 * 60_000;
+const BUSY_POLL_MS = 3_000;
 
 export class Worker {
   private running = 0;
   private ticking = false;
   private stopped = false;
   private timers: NodeJS.Timeout[] = [];
+  private nextTick: NodeJS.Timeout | undefined;
 
   constructor(
     private readonly s: Services,
@@ -385,8 +395,7 @@ export class Worker {
 
   start(): void {
     this.s.queue.onEnqueue(() => void this.tick());
-    this.timers.push(setInterval(() => void this.tick(), 3000));
-    this.timers.push(setInterval(() => void this.maintenance(), 60_000));
+    this.timers.push(setInterval(() => void this.maintenance(), MAINTENANCE_MS));
     void this.maintenance();
     void this.tick();
   }
@@ -395,6 +404,7 @@ export class Worker {
   async stop(timeoutMs = 20_000): Promise<void> {
     this.stopped = true;
     this.timers.forEach(clearInterval);
+    if (this.nextTick) clearTimeout(this.nextTick);
     const deadline = Date.now() + timeoutMs;
     while (this.running > 0 && Date.now() < deadline) await new Promise((r) => setTimeout(r, 200));
   }
@@ -402,6 +412,7 @@ export class Worker {
   private async tick(): Promise<void> {
     if (this.ticking || this.stopped) return;
     this.ticking = true;
+    let claimedSomething = false;
     try {
       while (!this.stopped && this.running < this.concurrency) {
         const job = await this.s.queue.claim();
@@ -410,17 +421,35 @@ export class Worker {
           await this.s.queue.release(job); // shutting down: let the next instance take it
           break;
         }
+        claimedSomething = true;
         this.running++;
         void this.run(job).finally(() => {
           this.running--;
           void this.tick();
         });
       }
+      await this.scheduleNextTick(claimedSomething);
     } catch (err) {
       log.error('worker', 'claim failed', { error: errMessage(err) });
+      this.sleepUntil(BUSY_POLL_MS);
     } finally {
       this.ticking = false;
     }
+  }
+
+  /** Sleep until the next queued job is due (or a long idle nap when the queue is empty). */
+  private async scheduleNextTick(busy: boolean): Promise<void> {
+    if (this.stopped) return;
+    if (busy || this.running > 0) return void this.sleepUntil(BUSY_POLL_MS);
+    const next = await this.s.queue.nextRunAt().catch(() => null);
+    const waitForDue = next ? next.getTime() - Date.now() : Number.POSITIVE_INFINITY;
+    this.sleepUntil(Math.min(IDLE_POLL_MS, Math.max(1_000, waitForDue)));
+  }
+
+  private sleepUntil(ms: number): void {
+    if (this.nextTick) clearTimeout(this.nextTick);
+    this.nextTick = setTimeout(() => void this.tick(), ms);
+    this.nextTick.unref?.();
   }
 
   private async run(job: Job): Promise<void> {

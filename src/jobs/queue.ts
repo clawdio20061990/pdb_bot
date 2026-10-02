@@ -107,6 +107,14 @@ export class Queue {
     );
   }
 
+  /** When the next queued job becomes due (null = nothing waiting). Lets the worker sleep until then. */
+  async nextRunAt(): Promise<Date | null> {
+    const { rows } = await this.db.query<{ at: Date | null }>(
+      `SELECT min(run_after) AS at FROM jobs WHERE status = 'queued'`,
+    );
+    return rows[0]?.at ?? null;
+  }
+
   /** Is a job of this kind for this invitation already waiting or running? (debounces repeated taps) */
   async hasActive(kind: JobKind, invitationId: number): Promise<boolean> {
     const { rowCount } = await this.db.query(
