@@ -1,0 +1,37 @@
+[
+  {
+    "chat_id": 468603848,
+    "username": "weduy_gorn",
+    "language": "pl",
+    "likes": "wine and beer, board games, grilled food / BBQ, burgers",
+    "dislikes": "noisy places, active recreation (sports, physically demanding activities)"
+  },
+  {
+    "chat_id": 7085470148,
+    "username": "weduy_gorn_2",
+    "language": "en",
+    "likes": "active recreation, yachting / sailing, eating good food",
+    "dislikes": "noise and commotion, vegan food, alcohol"
+  },
+  {
+    "chat_id": 8382568833,
+    "name": "Ewa",
+    "language": "pl",
+    "likes": "art, sightseeing, hiking, active time spending, healthy food, rock and alternative music",
+    "dislikes": "disco-polo music, smoking, seafood"
+  },
+  {
+    "chat_id": 8765661388,
+    "name": "Aga",
+    "language": "en",
+    "likes": "bikes, outdoors, hiking, mountains, forest, rock music, theatre, sushi, steak, seafood",
+    "dislikes": "fast food, cigarettes, techno music, disco-polo, clubbing"
+  },
+  {
+    "chat_id": 5020833953,
+    "name": "Fabian",
+    "language": "pl",
+    "likes": "travel, gym, hiking, active time, food, techno music",
+    "dislikes": "smoking, alcohol"
+  }
+]

@@ -1,0 +1,311 @@
+{
+ "status": "completed",
+ "usage": {
+  "total_input_tokens": 287,
+  "total_output_tokens": 173,
+  "total_thought_tokens": 895,
+  "grounding_tool_count": [
+   {
+    "type": "google_maps",
+    "count": 2
+   }
+  ]
+ },
+ "steps": [
+  {
+   "id": "call_1929048",
+   "type": "google_maps_call",
+   "arguments": {
+    "queries": [
+     "Craft Kultura Gdańsk"
+    ]
+   }
+  },
+  {
+   "call_id": "call_1929048",
+   "type": "google_maps_result",
+   "result": [
+    {
+     "places": [
+      {
+       "place_id": "ChIJARVa46Bz_UYRUpXh9-16mdI",
+       "name": "Chmielna 101 Cooltura - Google Maps",
+       "url": "https://maps.google.com/maps?cid=15175295581886190930"
+      },
+      {
+       "place_id": "ChIJnwvzlr1z_UYR9b-ojBE2eCE",
+       "name": "Oblackie Centrum Edukacji i Kultury - Google Maps",
+       "url": "https://maps.google.com/maps?cid=2411737049459113973"
+      },
+      {
+       "place_id": "ChIJnwvzlr1z_UYR9b-ojBE2eCE",
+       "name": "Review of Oblackie Centrum Edukacji i Kultury - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VOeTF2X1NmNl9LMjZnRRAB!2m1!1s0x46fd73bd96f30b9f:0x217836118ca8bff5"
+      },
+      {
+       "place_id": "ChIJ_6-eM6Bz_UYRImo_DfnuMhE",
+       "name": "Instytut Kultury Miejskiej w Kunszcie Wodnym - Google Maps",
+       "url": "https://maps.google.com/maps?cid=1239315600916834850"
+      },
+      {
+       "place_id": "ChIJ_6-eM6Bz_UYRImo_DfnuMhE",
+       "name": "Review of Instytut Kultury Miejskiej w Kunszcie Wodnym - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUQ3dEluMHVRRRAB!2m1!1s0x46fd73a0339eafff:0x1132eef90d3f6a22"
+      },
+      {
+       "place_id": "ChIJ_6-eM6Bz_UYRImo_DfnuMhE",
+       "name": "Review of Instytut Kultury Miejskiej w Kunszcie Wodnym - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURmX2N1N2tBRRAB!2m1!1s0x46fd73a0339eafff:0x1132eef90d3f6a22"
+      },
+      {
+       "place_id": "ChIJdTX7vQpz_UYRamPD_mHLbAA",
+       "name": "Saint John’s Church - Google Maps",
+       "url": "https://maps.google.com/maps?cid=30622919231234922"
+      },
+      {
+       "place_id": "ChIJdTX7vQpz_UYRamPD_mHLbAA",
+       "name": "Review of Saint John’s Church - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2poYWMyZFNabUp2UTA1VFFWWm1VVTF2VkRSMlFrRRAB!2m1!1s0x46fd730abdfb3575:0x6ccb61fec3636a"
+      },
+      {
+       "place_id": "ChIJdTX7vQpz_UYRamPD_mHLbAA",
+       "name": "Review of Saint John’s Church - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUQ4MlpyYWZREAE!2m1!1s0x46fd730abdfb3575:0x6ccb61fec3636a"
+      },
+      {
+       "place_id": "ChIJdTX7vQpz_UYRamPD_mHLbAA",
+       "name": "Review of Saint John’s Church - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnTURJcXRQT0hnEAE!2m1!1s0x46fd730abdfb3575:0x6ccb61fec3636a"
+      },
+      {
+       "place_id": "ChIJdTX7vQpz_UYRamPD_mHLbAA",
+       "name": "Review of Saint John’s Church - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURudGY3ekd3EAE!2m1!1s0x46fd730abdfb3575:0x6ccb61fec3636a"
+      },
+      {
+       "place_id": "ChIJdTX7vQpz_UYRamPD_mHLbAA",
+       "name": "Review of Saint John’s Church - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUMzbGVxa0F3EAE!2m1!1s0x46fd730abdfb3575:0x6ccb61fec3636a"
+      },
+      {
+       "place_id": "ChIJEadv3HVz_UYRLzLMn6CJlho",
+       "name": "The Baltic Sea Cultural Center - Google Maps",
+       "url": "https://maps.google.com/maps?cid=1915870014461456943"
+      },
+      {
+       "place_id": "ChIJEadv3HVz_UYRLzLMn6CJlho",
+       "name": "Review of The Baltic Sea Cultural Center - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25WRlF6UnJaazQ1UVRGWWNYSkRaRE5SV25sS1oxRRAB!2m1!1s0x46fd7375dc6fa711:0x1a9689a09fcc322f"
+      },
+      {
+       "place_id": "ChIJl-FPEN1z_UYRsQallRtj_9k",
+       "name": "Kunszt Wodny - Google Maps",
+       "url": "https://maps.google.com/maps?cid=15708382995417466545"
+      },
+      {
+       "place_id": "ChIJl-FPEN1z_UYRsQallRtj_9k",
+       "name": "Review of Kunszt Wodny - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tScmJXUmlaSEl4TUhSa1RYbHJTbWN0WldGWE5HYxAB!2m1!1s0x46fd73dd104fe197:0xd9ff631b95a506b1"
+      },
+      {
+       "place_id": "ChIJl-FPEN1z_UYRsQallRtj_9k",
+       "name": "Review of Kunszt Wodny - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNkLU1MQjhnRRAB!2m1!1s0x46fd73dd104fe197:0xd9ff631b95a506b1"
+      },
+      {
+       "place_id": "ChIJl-FPEN1z_UYRsQallRtj_9k",
+       "name": "Review of Kunszt Wodny - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNGdzQzVlVBEAE!2m1!1s0x46fd73dd104fe197:0xd9ff631b95a506b1"
+      },
+      {
+       "place_id": "ChIJHwhr5ktz_UYRV-GOpcV6Tn4",
+       "name": "Narodowe Centrum Kultury Tatarów - Google Maps",
+       "url": "https://maps.google.com/maps?cid=9101346886267101527"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "call_1929067",
+   "type": "google_maps_call",
+   "arguments": {
+    "queries": [
+     "Craft Kultura"
+    ]
+   }
+  },
+  {
+   "call_id": "call_1929067",
+   "type": "google_maps_result",
+   "result": [
+    {
+     "places": [
+      {
+       "place_id": "ChIJKSrIW1Nz_UYRhDJiZ2qrrOw",
+       "name": "Craft Kultura - Google Maps",
+       "url": "https://maps.google.com/maps?cid=17054194362434597508"
+      },
+      {
+       "place_id": "ChIJKSrIW1Nz_UYRhDJiZ2qrrOw",
+       "name": "Review of Craft Kultura - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pCemJUaHlSMDFpY2pCRVJVVjVUR1JJZFc1aE9WRRAB!2m1!1s0x46fd73535bc82a29:0xecacab6a67623284"
+      },
+      {
+       "place_id": "ChIJEadv3HVz_UYRLzLMn6CJlho",
+       "name": "The Baltic Sea Cultural Center - Google Maps",
+       "url": "https://maps.google.com/maps?cid=1915870014461456943"
+      },
+      {
+       "place_id": "ChIJEadv3HVz_UYRLzLMn6CJlho",
+       "name": "Review of The Baltic Sea Cultural Center - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25WRlF6UnJaazQ1UVRGWWNYSkRaRE5SV25sS1oxRRAB!2m1!1s0x46fd7375dc6fa711:0x1a9689a09fcc322f"
+      },
+      {
+       "place_id": "ChIJARVa46Bz_UYRUpXh9-16mdI",
+       "name": "Chmielna 101 Cooltura - Google Maps",
+       "url": "https://maps.google.com/maps?cid=15175295581886190930"
+      },
+      {
+       "place_id": "ChIJl-FPEN1z_UYRsQallRtj_9k",
+       "name": "Kunszt Wodny - Google Maps",
+       "url": "https://maps.google.com/maps?cid=15708382995417466545"
+      },
+      {
+       "place_id": "ChIJl-FPEN1z_UYRsQallRtj_9k",
+       "name": "Review of Kunszt Wodny - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tScmJXUmlaSEl4TUhSa1RYbHJTbWN0WldGWE5HYxAB!2m1!1s0x46fd73dd104fe197:0xd9ff631b95a506b1"
+      },
+      {
+       "place_id": "ChIJl-FPEN1z_UYRsQallRtj_9k",
+       "name": "Review of Kunszt Wodny - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNkLU1MQjhnRRAB!2m1!1s0x46fd73dd104fe197:0xd9ff631b95a506b1"
+      },
+      {
+       "place_id": "ChIJnwvzlr1z_UYR9b-ojBE2eCE",
+       "name": "Oblackie Centrum Edukacji i Kultury - Google Maps",
+       "url": "https://maps.google.com/maps?cid=2411737049459113973"
+      },
+      {
+       "place_id": "ChIJnwvzlr1z_UYR9b-ojBE2eCE",
+       "name": "Review of Oblackie Centrum Edukacji i Kultury - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VOeTF2X1NmNl9LMjZnRRAB!2m1!1s0x46fd73bd96f30b9f:0x217836118ca8bff5"
+      },
+      {
+       "place_id": "ChIJ4QtyI44K_UYRvoOSrnLSfQw",
+       "name": "Cafe Kultura - Google Maps",
+       "url": "https://maps.google.com/maps?cid=900106890540909502"
+      },
+      {
+       "place_id": "ChIJ4QtyI44K_UYRvoOSrnLSfQw",
+       "name": "Review of Cafe Kultura - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xOalpERlNaVzVXVVZReE5HeDZSbTVTZVRjMk1YYxAB!2m1!1s0x46fd0a8e23720be1:0xc7dd272ae9283be"
+      },
+      {
+       "place_id": "ChIJ4QtyI44K_UYRvoOSrnLSfQw",
+       "name": "Review of Cafe Kultura - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tWQlgxRkxRVkZET1hkemVVRjFiSGgxV25sNU1WRRAB!2m1!1s0x46fd0a8e23720be1:0xc7dd272ae9283be"
+      },
+      {
+       "place_id": "ChIJ4QtyI44K_UYRvoOSrnLSfQw",
+       "name": "Review of Cafe Kultura - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xsamEzWXpkMmxGY0hsMmJFbDNOMFJCYm1wbE1tYxAB!2m1!1s0x46fd0a8e23720be1:0xc7dd272ae9283be"
+      },
+      {
+       "place_id": "ChIJ4QtyI44K_UYRvoOSrnLSfQw",
+       "name": "Review of Cafe Kultura - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUR0OWU3U3dBRRAB!2m1!1s0x46fd0a8e23720be1:0xc7dd272ae9283be"
+      },
+      {
+       "place_id": "ChIJ4QtyI44K_UYRvoOSrnLSfQw",
+       "name": "Review of Cafe Kultura - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VNaUltdlREdTdPRVFBEAE!2m1!1s0x46fd0a8e23720be1:0xc7dd272ae9283be"
+      },
+      {
+       "place_id": "ChIJXYULQPt1_UYReVSma3CITOg",
+       "name": "KULTURA BARBERSHOP - Google Maps",
+       "url": "https://maps.google.com/maps?cid=16738903931453068409"
+      },
+      {
+       "place_id": "ChIJPfB8_U11_UYRqW49IR3yKVY",
+       "name": "MOVA - Język i kultura - Google Maps",
+       "url": "https://maps.google.com/maps?cid=6208759768232586921"
+      },
+      {
+       "place_id": "ChIJ7dOhJgBz_UYRVtC01CXKO_s",
+       "name": "Księgarnia w Instytucie Kultury Miejskiej - Google Maps",
+       "url": "https://maps.google.com/maps?cid=18103285390977060950"
+      },
+      {
+       "place_id": "ChIJUygDYgBz_UYR9HFW-KeK9kw",
+       "name": "Galeria w Ruchu - Google Maps",
+       "url": "https://maps.google.com/maps?cid=5545772445183930868"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "thought"
+  },
+  {
+   "content": [
+    {
+     "text": "Craft Kultura\nAddress: Księdza Jerzego Popiełuszki 22/u4, 80-864 Gdańsk, Poland\nRelevant for the group: Osoba 1 znajdzie tu gry planszowe i piwo (w tym bezalkoholowe); brak informacji o winie, potrawach z grilla czy burgerach. Kameralna i przytulna atmosfera odpowiada niechęci obu osób do hałasu oraz tłumów. Osoba 2 skorzysta z opcji konsumpcji na miejscu oraz napojów bezalkoholowych; brak danych o rekreacji, żeglarstwie czy potrawach wegańskich.",
+     "annotations": [
+      {
+       "start_index": 0,
+       "end_index": 13,
+       "place_id": "ChIJKSrIW1Nz_UYRhDJiZ2qrrOw",
+       "name": "Craft Kultura - Google Maps",
+       "url": "https://maps.google.com/maps?cid=17054194362434597508",
+       "type": "place_citation"
+      },
+      {
+       "start_index": 0,
+       "end_index": 82,
+       "place_id": "ChIJKSrIW1Nz_UYRhDJiZ2qrrOw",
+       "name": "Craft Kultura - Google Maps",
+       "url": "https://maps.google.com/maps?cid=17054194362434597508",
+       "type": "place_citation"
+      },
+      {
+       "start_index": 0,
+       "end_index": 228,
+       "place_id": "ChIJKSrIW1Nz_UYRhDJiZ2qrrOw",
+       "name": "Craft Kultura - Google Maps",
+       "url": "https://maps.google.com/maps?cid=17054194362434597508",
+       "type": "place_citation"
+      },
+      {
+       "start_index": 0,
+       "end_index": 228,
+       "place_id": "ChIJKSrIW1Nz_UYRhDJiZ2qrrOw",
+       "name": "Review of Craft Kultura - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pCemJUaHlSMDFpY2pCRVJVVjVUR1JJZFc1aE9WRRAB!2m1!1s0x46fd73535bc82a29:0xecacab6a67623284",
+       "type": "place_citation"
+      },
+      {
+       "start_index": 230,
+       "end_index": 316,
+       "place_id": "ChIJKSrIW1Nz_UYRhDJiZ2qrrOw",
+       "name": "Craft Kultura - Google Maps",
+       "url": "https://maps.google.com/maps?cid=17054194362434597508",
+       "type": "place_citation"
+      },
+      {
+       "start_index": 318,
+       "end_index": 460,
+       "place_id": "ChIJKSrIW1Nz_UYRhDJiZ2qrrOw",
+       "name": "Craft Kultura - Google Maps",
+       "url": "https://maps.google.com/maps?cid=17054194362434597508",
+       "type": "place_citation"
+      }
+     ],
+     "type": "text"
+    }
+   ],
+   "type": "model_output"
+  }
+ ]
+}

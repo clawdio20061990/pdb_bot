@@ -1,0 +1,24 @@
+# Render Blueprint: Dashboard -> New -> Blueprint -> pick this repo.
+services:
+  - type: web
+    name: pdb-bot
+    runtime: node
+    plan: free # spins down after 15 min idle; the first message after that waits ~1 min
+    region: frankfurt # next to Neon eu-central-1
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: node dist/index.js
+    healthCheckPath: /healthz
+    autoDeployTrigger: commit
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: BOT_TOKEN
+        sync: false # asked once when the Blueprint is created
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: DATABASE_URL # Neon pooled connection string
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.6-flash
+      - key: WEBHOOK_SECRET
+        generateValue: true

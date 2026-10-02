@@ -1,0 +1,212 @@
+{
+ "status": "completed",
+ "usage": {
+  "total_input_tokens": 252,
+  "total_output_tokens": 267,
+  "total_thought_tokens": 0,
+  "grounding_tool_count": [
+   {
+    "type": "google_maps",
+    "count": 1
+   }
+  ]
+ },
+ "steps": [
+  {
+   "id": "call_1677368",
+   "type": "google_maps_call",
+   "arguments": {
+    "queries": [
+     "sailing club yacht charter in Gdansk"
+    ]
+   }
+  },
+  {
+   "call_id": "call_1677368",
+   "type": "google_maps_result",
+   "result": [
+    {
+     "places": [
+      {
+       "place_id": "ChIJtdVvt7pz_UYRdpObxALExCc",
+       "name": "Yacht Club Premier - Google Maps",
+       "url": "https://maps.google.com/maps?cid=2865630779081986934"
+      },
+      {
+       "place_id": "ChIJtdVvt7pz_UYRdpObxALExCc",
+       "name": "Review of Yacht Club Premier - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUN6LTdpeUpBEAE!2m1!1s0x46fd73bab76fd5b5:0x27c4c402c49b9376"
+      },
+      {
+       "place_id": "ChIJ2fCutnDtnwcRcyq5gcVe2HM",
+       "name": "United Sailing Club - Google Maps",
+       "url": "https://maps.google.com/maps?cid=8347526111709178483"
+      },
+      {
+       "place_id": "ChIJ2fCutnDtnwcRcyq5gcVe2HM",
+       "name": "Review of United Sailing Club - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNEbE56S2ZBEAE!2m1!1s0x79fed70b6aef0d9:0x73d85ec581b92a73"
+      },
+      {
+       "place_id": "ChIJ2fCutnDtnwcRcyq5gcVe2HM",
+       "name": "Review of United Sailing Club - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VMbVhqc0w2cThydExBEAE!2m1!1s0x79fed70b6aef0d9:0x73d85ec581b92a73"
+      },
+      {
+       "place_id": "ChIJ2fCutnDtnwcRcyq5gcVe2HM",
+       "name": "Review of United Sailing Club - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUM5LW9tM1BREAE!2m1!1s0x79fed70b6aef0d9:0x73d85ec581b92a73"
+      },
+      {
+       "place_id": "ChIJ2fCutnDtnwcRcyq5gcVe2HM",
+       "name": "Review of United Sailing Club - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJV2NfUER2eEtuMXJBRRAB!2m1!1s0x79fed70b6aef0d9:0x73d85ec581b92a73"
+      },
+      {
+       "place_id": "ChIJ2fCutnDtnwcRcyq5gcVe2HM",
+       "name": "Review of United Sailing Club - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURINTZpWUxnEAE!2m1!1s0x79fed70b6aef0d9:0x73d85ec581b92a73"
+      },
+      {
+       "place_id": "ChIJN13fW4Nz_UYR1_R1xAGYMbc",
+       "name": "Rejsy w Gdańsku – Premium Yachting - Google Maps",
+       "url": "https://maps.google.com/maps?cid=13200499116158088407"
+      },
+      {
+       "place_id": "ChIJN13fW4Nz_UYR1_R1xAGYMbc",
+       "name": "Review of Rejsy w Gdańsku – Premium Yachting - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21waFkyZFdkRGhVU25nMVgzWTJUSGc0UkdFMmJVRRAB!2m1!1s0x46fd73835bdf5d37:0xb7319801c475f4d7"
+      },
+      {
+       "place_id": "ChIJN13fW4Nz_UYR1_R1xAGYMbc",
+       "name": "Review of Rejsy w Gdańsku – Premium Yachting - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21Oa1EwRmlXVlpoVHkxbVYzcDNTRFJ6WjJZM1VIYxAB!2m1!1s0x46fd73835bdf5d37:0xb7319801c475f4d7"
+      },
+      {
+       "place_id": "ChIJN13fW4Nz_UYR1_R1xAGYMbc",
+       "name": "Review of Rejsy w Gdańsku – Premium Yachting - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNEM2N2b2xBRRAB!2m1!1s0x46fd73835bdf5d37:0xb7319801c475f4d7"
+      },
+      {
+       "place_id": "ChIJN13fW4Nz_UYR1_R1xAGYMbc",
+       "name": "Review of Rejsy w Gdańsku – Premium Yachting - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21JeVdGRnNkRTlTZFc1dmJERjBXV1IxYmxOd1NsRRAB!2m1!1s0x46fd73835bdf5d37:0xb7319801c475f4d7"
+      },
+      {
+       "place_id": "ChIJN13fW4Nz_UYR1_R1xAGYMbc",
+       "name": "Review of Rejsy w Gdańsku – Premium Yachting - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VLcmwwWjJHaHUyaDF3RRAB!2m1!1s0x46fd73835bdf5d37:0xb7319801c475f4d7"
+      },
+      {
+       "place_id": "ChIJl4mtgX1z_UYR-ITpne6GKS0",
+       "name": "Premium Yachting - Google Maps",
+       "url": "https://maps.google.com/maps?cid=3254280565161559288"
+      },
+      {
+       "place_id": "ChIJl4mtgX1z_UYR-ITpne6GKS0",
+       "name": "Review of Premium Yachting - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xjdFpHRkZMVlJtV1ZCSlpVbHNVa1IzZERSTFdHYxAB!2m1!1s0x46fd737d81ad8997:0x2d2986ee9de984f8"
+      },
+      {
+       "place_id": "ChIJe5dKI5lt_UYRrGdEagDXRec",
+       "name": "SPLENDOR CLUB - Wypożyczalnia jachtów i skuterów wodnych Gdańsk SOLMARINA - Google Maps",
+       "url": "https://maps.google.com/maps?cid=16664962392937228204"
+      },
+      {
+       "place_id": "ChIJe5dKI5lt_UYRrGdEagDXRec",
+       "name": "Review of SPLENDOR CLUB - Wypożyczalnia jachtów i skuterów wodnych Gdańsk SOLMARINA - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pCS1VUTk5Wazh0UlZkMFYycGhNM0JsUldSZmRXYxAB!2m1!1s0x46fd6d99234a977b:0xe745d7006a4467ac"
+      },
+      {
+       "place_id": "ChIJe5dKI5lt_UYRrGdEagDXRec",
+       "name": "Review of SPLENDOR CLUB - Wypożyczalnia jachtów i skuterów wodnych Gdańsk SOLMARINA - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNycG9LX1BBEAE!2m1!1s0x46fd6d99234a977b:0xe745d7006a4467ac"
+      },
+      {
+       "place_id": "ChIJDR0LElxz_UYRaVsUf9xZOyk",
+       "name": "Dream Yachting Gdansk - Google Maps",
+       "url": "https://maps.google.com/maps?cid=2971067182740691817"
+      },
+      {
+       "place_id": "ChIJk2OoxOQL_UYRZyRMvFfFZeM",
+       "name": "Rejsy w Sopocie - z molo - Premium Yachting - Google Maps",
+       "url": "https://maps.google.com/maps?cid=16385719799869351015"
+      },
+      {
+       "place_id": "ChIJk2OoxOQL_UYRZyRMvFfFZeM",
+       "name": "Review of Rejsy w Sopocie - z molo - Premium Yachting - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURwa0syb0J3EAE!2m1!1s0x46fd0be4c4a86393:0xe365c557bc4c2467"
+      },
+      {
+       "place_id": "ChIJk2OoxOQL_UYRZyRMvFfFZeM",
+       "name": "Review of Rejsy w Sopocie - z molo - Premium Yachting - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUQ3b3A3WnR3RRAB!2m1!1s0x46fd0be4c4a86393:0xe365c557bc4c2467"
+      },
+      {
+       "place_id": "ChIJk2OoxOQL_UYRZyRMvFfFZeM",
+       "name": "Review of Rejsy w Sopocie - z molo - Premium Yachting - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNmb2ZycVlnEAE!2m1!1s0x46fd0be4c4a86393:0xe365c557bc4c2467"
+      },
+      {
+       "place_id": "ChIJk2OoxOQL_UYRZyRMvFfFZeM",
+       "name": "Review of Rejsy w Sopocie - z molo - Premium Yachting - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURINVA3SDZBRRAB!2m1!1s0x46fd0be4c4a86393:0xe365c557bc4c2467"
+      },
+      {
+       "place_id": "ChIJk2OoxOQL_UYRZyRMvFfFZeM",
+       "name": "Review of Rejsy w Sopocie - z molo - Premium Yachting - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21SYVpXTXlOVzFGZUVsMmFWYzRkbUY1TkV0Rk1HYxAB!2m1!1s0x46fd0be4c4a86393:0xe365c557bc4c2467"
+      },
+      {
+       "place_id": "ChIJLSQyRt5z_UYRPJjso_SXS6U",
+       "name": "Motlawa Boats Charter - Rejsy ze Sternikiem i Wynajem - Google Maps",
+       "url": "https://maps.google.com/maps?cid=11910780716489414716"
+      },
+      {
+       "place_id": "ChIJLSQyRt5z_UYRPJjso_SXS6U",
+       "name": "Review of Motlawa Boats Charter - Rejsy ze Sternikiem i Wynajem - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25oTk0yRTVjSE4yV0hWcVpEQmpVMHhOTlY5TlZVRRAB!2m1!1s0x46fd73de4632242d:0xa54b97f4a3ec983c"
+      },
+      {
+       "place_id": "ChIJLSQyRt5z_UYRPJjso_SXS6U",
+       "name": "Review of Motlawa Boats Charter - Rejsy ze Sternikiem i Wynajem - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xoWFNuRlhORWwzYWxrNVVtVmpZMkZyUTJaVVJuYxAB!2m1!1s0x46fd73de4632242d:0xa54b97f4a3ec983c"
+      },
+      {
+       "place_id": "ChIJLSQyRt5z_UYRPJjso_SXS6U",
+       "name": "Review of Motlawa Boats Charter - Rejsy ze Sternikiem i Wynajem - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2kxR1VITnNTR0paVkhKR2JFOXhNa1U1VUhCak5uYxAB!2m1!1s0x46fd73de4632242d:0xa54b97f4a3ec983c"
+      },
+      {
+       "place_id": "ChIJLyKjsNxz_UYRHePfSq6B-zA",
+       "name": "JeyJey Boats Gdańsk - jachty, motorówki, katamarany - Google Maps",
+       "url": "https://maps.google.com/maps?cid=3529557318555394845"
+      },
+      {
+       "place_id": "ChIJLyKjsNxz_UYRHePfSq6B-zA",
+       "name": "Review of JeyJey Boats Gdańsk - jachty, motorówki, katamarany - Google Maps",
+       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21kM2RXTTNjR1ZKWWxwNFVGaDFhMGxITVRSelYyYxAB!2m1!1s0x46fd73dcb0a3222f:0x30fb81ae4adfe31d"
+      },
+      {
+       "place_id": "ChIJ0555BWlt_UYRmN-m1lKL-nE",
+       "name": "Neptun. Jachtklub morski - Google Maps",
+       "url": "https://maps.google.com/maps?cid=8213030058368360344"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "thought"
+  },
+  {
+   "content": [
+    {
+     "text": "1. Yacht Club Premier\nAddress: Szafarnia 6, 80-755 Gdańsk, Poland\nWhy it fits: They organize sunset cruises around the Bay of Gdańsk and the Old Town, which caters to Person 2's interest in active recreation and yachting. It offers a relaxed boat trip with no forced alcohol or crowds, though board games, burgers, and vegan options are unknown.\n\n2. Rejsy w Gdańsku – Premium Yachting\nAddress: Wartka, 80-841 Gdańsk, Poland\nWhy it fits: It offers short ticketed or private yacht trips along the Motława and Gdańsk Bay with a skipper, fitting Person 2's love for yachting and active recreation. The experience is usually not too busy on weekdays to avoid large crowds and noise, though specific food and game amenities are unknown.\n\n3. Premium Yachting\nAddress: Dokowa 1, 80-863 Gdańsk, Poland\nWhy it fits: They offer yacht charters and sailing events in the Bay of Gdańsk, perfect for beginners looking for short trips or yachting activities. Weekday mornings are typically not too busy to keep crowd and noise levels low, but options for board games or specific food diets are unknown.",
+     "type": "text"
+    }
+   ],
+   "type": "model_output"
+  }
+ ]
+}
