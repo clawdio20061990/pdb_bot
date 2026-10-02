@@ -1,0 +1,17 @@
+[
+  {
+    "chat_id": 111111111,
+    "username": "example_user",
+    "name": "Ola",
+    "language": "pl",
+    "likes": "wine and beer, board games, grilled food, burgers",
+    "dislikes": "noisy places, active recreation"
+  },
+  {
+    "chat_id": 222222222,
+    "username": "example_user_2",
+    "language": "en",
+    "likes": "active recreation, yachting, eating good food",
+    "dislikes": "noise and commotion, vegan food, alcohol"
+  }
+]

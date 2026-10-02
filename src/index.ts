@@ -11,7 +11,7 @@ import { errMessage, log } from './log.js';
 import { Repo } from './repo.js';
 import { startServer, WEBHOOK_PATH, type WebServer } from './server.js';
 import type { Services } from './services.js';
-import { syncUsersFromFile } from './users-sync.js';
+import { syncUsers } from './users-sync.js';
 
 const ALLOWED_UPDATES = ['message', 'callback_query'] as const;
 
@@ -45,7 +45,9 @@ async function main(): Promise<void> {
   await migrate(cfg.DATABASE_URL);
   const pool = createPool(cfg.DATABASE_URL);
   const repo = new Repo(pool);
-  log.info('boot', 'users synced from data/users.json', await syncUsersFromFile(repo));
+  const synced = await syncUsers(repo, cfg.USERS_JSON);
+  if (synced) log.info('boot', `profiles synced from ${cfg.USERS_JSON ? 'USERS_JSON' : 'data/users.json'}`, synced);
+  else log.warn('boot', 'no USERS_JSON and no data/users.json: keeping the profiles already in the database');
 
   const bot = new Bot<BotContext>(cfg.BOT_TOKEN);
   bot.api.config.use(autoRetry({ maxRetryAttempts: 3, maxDelaySeconds: 30 }));

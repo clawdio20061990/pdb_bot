@@ -28,7 +28,8 @@ if (!idea) throw new Error('usage: npm run try -- "<meetup idea>" [--organizer <
 const key = process.env.GEMINI_API_KEY;
 if (!key) throw new Error('GEMINI_API_KEY is not set');
 
-const users: User[] = (await loadSeedUsers()).map((u) => ({
+const seeds = (await loadSeedUsers(process.env.USERS_JSON)) ?? [];
+const users: User[] = seeds.map((u) => ({
   chat_id: u.chat_id,
   username: u.username ?? null,
   name: u.name ?? null,

@@ -18,6 +18,8 @@ services:
         sync: false
       - key: DATABASE_URL # Neon pooled connection string
         sync: false
+      - key: USERS_JSON # the profiles (JSON array) — personal data stays out of the repo
+        sync: false
       - key: GEMINI_MODEL
         value: gemini-3.6-flash
       - key: WEBHOOK_SECRET

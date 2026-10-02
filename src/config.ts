@@ -5,6 +5,8 @@ const schema = z.object({
   GEMINI_API_KEY: z.string().min(10, 'GEMINI_API_KEY is required'),
   DATABASE_URL: z.string().startsWith('postgres', 'DATABASE_URL must be a postgres:// URL'),
   GEMINI_MODEL: z.string().default('gemini-3.6-flash'),
+  // Profiles as JSON. Takes precedence over data/users.json, which keeps personal data out of the repo.
+  USERS_JSON: z.string().optional(),
   // Public base URL of this service. On Render it defaults to RENDER_EXTERNAL_URL.
   // When neither is set the bot runs in long-polling mode (local development).
   WEBHOOK_URL: z.string().url().optional(),
